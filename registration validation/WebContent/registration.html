@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+<style>
+.for
+{
+background: #FF0000;
+text-align: center;
+right: 100px;
+background-color:rgba(255, 99, 71, 0.2);
+border: 3px solid #73AD21;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+<script type = "text/javascript">
+    function validate() 
+	{
+    	if(document.myForm.hello.value==""){
+    		alert("Please provide user mobile number");
+    		}
+         if( document.myForm.mail.value == "" ) {
+            alert( "Please provide your Email!" );
+         }
+         if(document.myForm.un.value==""){
+	alert("Please provide user name");
+	}
+       
+}
+</script>
+<h1>ABC Institution Technical Club</h1>
+<form name="myForm" onSubmit=" return validate()">
+<div class="for">
+Enter IDNumber:<input type="text" name="id"><br><br>
+Enter FullName:<input type="text" name="T1"><br><br>
+Phone Number:&nbsp&nbsp<input type="number" name="hello"><br><br>
+Date:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="date" name="date"><br><br>
+Password:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="password" name="rpw"><br><br>
+Enter Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" placeholder="abc@gmail.com" name="mail"><br><br>
+<input type="submit"  value="Register">
+</div>
+</form>
+</body>
+</html>
